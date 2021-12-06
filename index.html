@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Inline&family=Bungee+Shade&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="intro">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <img src="./img/yourLogo.png" alt="">
+                </div>
+                <nav class="navbar">
+                    <div class="burger-menu" tabindex="1">
+                        <span></span>
+                    </div>
+                    <div class="navbarContact">
+                        <div>
+                            <div>Express delivery</div>
+                            <span>+1 234 567 890</span>
+                        </div>
+                        <img src="./img/Phone.png" alt="">
+                    </div>
+                    <div class="navbar__menu">
+                        <a href="#"  class="menu__item" data-goto='.intro'>Home</a>
+                        <a href="#"  class="menu__item" data-goto='.products'>Menu</a>
+                        <a href="#"  class="menu__item" data-goto='.swiper-block'>Our Story</a>
+                        <a href="#"  class="menu__item" data-goto='.Contact-Us'>Contact Us</a>
+                    </div>
+                </nav>
+        </header>
+        <div class="burger__menu-list">
+            <ul>
+            <li><a href="#"  class="menu__item" data-goto='.intro'>Home</a></li>
+            <li><a href="#"  class="menu__item" data-goto='.products'>Menu</a></li>
+            <li><a href="#"  class="menu__item" data-goto='.swiper-block'>Our Story</a></li>
+            <li><a href="#"  class="menu__item" data-goto='.Contact-Us'>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="intro-main">
+            <div class="intro-main__container">
+                <div class="intro-main__column1">
+                    <div class="intro-main__column1-title">
+                        Classic
+                        Hot Dogs
+                    </div>
+                    <div class="intro-main__column1-block">
+                        <div class="intro-main__column1-subtitle">
+                            Special Hot Dog
+                            +1 Drink+Coffee
+                            <img src="./img/Icons.png" alt="">
+                        </div>
+                        <div class="intro-main__column1-price">
+                            <span>$</span>
+                            <span>10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-main__column2">
+                    <img src="./img/intro__hotdog.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="products">
+            <div class="info-block">
+                <div class="title">Always Tasty Hot Gogs</div>
+                <div class="subtitle">Choose & Enjoy</div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+            </div>
+            <div class="products-grid">
+                <div class="products__item">
+                    <img src="./img/product-hotdog1.png" alt="">
+                    <div class="products-item__title">Lorem ipsum dolor</div>
+                    <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                    <button class="btn__pop-up-open call-popup_1 call-popup">Order Now</button>
+                </div>
+                <div class="products__item ">
+                    <img src="./img/product-hotdog2.png" alt="">
+                    <div class="products-item__title products-item__title_1">Lorem ipsum dolor</div>
+                    <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                    <button class="btn__pop-up-open call-popup_2 call-popup">Order Now</button>
+                </div>
+                <div class="products__item">
+                    <img src="./img/product-hotdog1.png" alt="">
+                    <div class="products-item__title">Lorem ipsum dolor</div>
+                    <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                    <button class="btn__pop-up-open call-popup_3 call-popup">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="img-block">
+            <div class="img-block__container">
+                <div class="img-block-section1">
+                    <img src="./img/additionalimg1.png" alt="">
+                </div>
+                <div class="img-block-section2">
+                    <img src="./img/additionalimg2.png" alt="">
+                    <img src="./img/additionalimg3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-block">
+            <div class="info-block">
+                <div class="title">Discover</div>
+                <div class="subtitle">Upcoming Events</div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+            </div>
+            <div class="swiper__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="./img/swiperimg1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/swiperimg2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/swiperimg3.jpg" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                  </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup popup_1">
+        <div class="popup__body">
+            <div class="popup__container">
+                <div class="popup__close">x</div>
+                <img src="./img/product-hotdog1.png" alt="">
+                <div class="products-item__title">Lorem ipsum dolor</div>
+                <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                <div class="products-item__price">5$</div>
+                <button class="btn__pop-up-open btn__pop-up-open_close-Activity">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_2">
+        <div class="popup__body">
+            <div class="popup__container">
+                <div class="popup__close">x</div>
+                <img src="./img/product-hotdog2.png" alt="">
+                <div class="products-item__title">Lorem ipsum dolor</div>
+                <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                <div class="products-item__price">7$</div>
+                <button class="btn__pop-up-open btn__pop-up-open_close-Activity">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_3">
+        <div class="popup__body">
+            <div class="popup__container">
+                <div class="popup__close">x</div>
+                <img src="./img/product-hotdog1.png" alt="">
+                <div class="products-item__title">Lorem ipsum dolor</div>
+                <div class="products-item__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                <div class="products-item__price">10$</div>
+                <button class="btn__pop-up-open btn__pop-up-open_close-Activity">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
