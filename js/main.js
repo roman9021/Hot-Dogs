@@ -6,22 +6,23 @@ let body = document.querySelector('body');
 let buttonContentPopUp = document.querySelectorAll('.btn__pop-up-open_close-Activity');
 let activeEl = 0;
 //burger menu
-let burgerCount = 1;
-let burgerList = document.querySelector('.burger__menu-list');
-let burgerButton = document.querySelector('.burger-menu');
-burgerButton.addEventListener("click",()=>{
-    if(burgerCount%2==1){
-        burgerList.classList.add('active')
+const burgerButton = document.getElementById('burgerButton');
+const list  = document.getElementsByClassName('header__nav')[0];
+list.style.left = '-100%';
+let count = 1;
+burgerButton.onclick = ()=>{
+    console.log(count);
+    if(count%2==1){
+        list.style.left = '0';
         burgerButton.classList.add('active');
     }
     else{
-        burgerList.classList.remove('active');
+        list.style.left='-100%';
         burgerButton.classList.remove('active');
-    }
-    burgerCount++;
-})
-
-//
+    }   
+    count++;
+}
+////////////////////////////
 //!warring!!! class in call__popUp must go in the given order
 popUpbuttons.forEach(el =>el.addEventListener("click",()=>{
     activeEl =  el.classList[1].split(['_'])[1]-1;
@@ -34,6 +35,7 @@ function closePopup (){
     popUps[activeEl].classList.remove('_PopUp-active');
     body.style.overflow='auto';
 }
+/////////////////////////////////////
 new Swiper('.swiper',{
     loop:true,
     pagination: {
@@ -50,6 +52,7 @@ new Swiper('.swiper',{
       },
     grabCursor:true,
 })
+////////////////////////////////////////////////
 let menuLinks=document.querySelectorAll('.menu__item[data-goto]');
 if(menuLinks.length>0){
     menuLinks.forEach (menuLinks=>{
@@ -60,9 +63,9 @@ if(menuLinks.length>0){
         if(menuLink.dataset.goto&&document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top;
-            burgerList.classList.remove('active');
+            list.style.left='-100%';
             burgerButton.classList.remove('active');
-            burgerCount++;
+            count++;
             window.scrollTo({
                 top:gotoBlockValue,
                 behavior:'smooth'
