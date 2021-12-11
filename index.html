@@ -19,37 +19,31 @@
 <body>
     <div class="intro">
         <header class="header">
-            <div class="header__wrapper">
-                <div class="logo">
-                    <img src="./img/yourLogo.png" alt="">
+            <div class="container header__container">
+                <div class="logo"><img src="./img/yourLogo.png" alt=""></div>
+                <div class="menu-burger__header" id="burgerButton">
+                    <span></span>
                 </div>
-                <nav class="navbar">
-                    <div class="burger-menu" tabindex="1">
-                        <span></span>
-                    </div>
-                    <div class="navbarContact">
-                        <div>
-                            <div>Express delivery</div>
-                            <span>+1 234 567 890</span>
+        
+                <nav class="header__nav navbar" style="left: -100%;">
+                        <div class="navbarContact">
+                            <div>
+                                <div>Express delivery</div>
+                                <span>+1 234 567 890</span>
+                            </div>
+                            <img src="./img/Phone.png" alt="">
                         </div>
-                        <img src="./img/Phone.png" alt="">
-                    </div>
-                    <div class="navbar__menu">
-                        <a href="#"  class="menu__item" data-goto='.intro'>Home</a>
-                        <a href="#"  class="menu__item" data-goto='.products'>Menu</a>
-                        <a href="#"  class="menu__item" data-goto='.swiper-block'>Our Story</a>
-                        <a href="#"  class="menu__item" data-goto='.Contact-Us'>Contact Us</a>
-                    </div>
+                    <ul class="menu header__menu">
+                        <li data-goto=".intro" class="menu__item"><a data-goto=".intro" class="menu__item " href="#" >Home</a></li>
+                        <li data-goto=".products" class="menu__item"><a data-goto=".products" class="menu__item" href="#" >About</a></li>
+                        <li data-goto=".swiper-block" class="menu__item"><a data-goto=".swiper-block"  class="menu__item" href="#">Servicing</a></li>
+                        <li data-goto=".intro" class="menu__item"><a data-goto=".portfolio"  class="menu__item" href="#" >Portfolio</a></li>
+                        <li data-goto=".intro" class="menu__item"><a data-goto=".blog" href="#" class="menu__item"></a></li>    
+                    </ul>
                 </nav>
+               
+            </div>
         </header>
-        <div class="burger__menu-list">
-            <ul>
-            <li class="menu__item" data-goto='.intro'><a href="#"  >Home</a></li>
-            <li  class="menu__item" data-goto='.products'><a href="#">Menu</a></li>
-            <li class="menu__item" data-goto='.swiper-block'><a href="#"  >Our Story</a></li>
-            <li class="menu__item" data-goto='.Contact-Us'><a href="#"  >Contact Us</a></li>
-            </ul>
-        </div>
         <div class="intro-main">
             <div class="intro-main__container">
                 <div class="intro-main__column1">
