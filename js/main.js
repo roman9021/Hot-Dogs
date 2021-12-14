@@ -75,3 +75,50 @@ if(menuLinks.length>0){
         }
     }
 }
+///////////form///////////////////
+const errorblock= document.getElementById('errorform');
+const form = document.forms[0];
+const email = form.emailInput;
+const name = form.nameInput;
+const message = form.messageInput;
+const time = form.time;
+const people = form.people;
+
+document.addEventListener ('submit',(event)=>{
+    if(checkEmail(email)&&checkname(name)&&checkMessage(message)){
+        return true;
+    }
+    event.preventDefault();
+})
+
+
+function checkEmail (el){
+    if (typeof el.value=='string'){
+        if(el.value.split(['@']).length>1&&el.value.split(['.']).length>1){
+            if(el.value.length>8){
+                return true;
+            }
+        }
+    }
+    errorblock.innerHTML="enter the correct email";
+    return false;
+}
+function checkname (el){
+    if (typeof el.value=='string'){
+        if(el.value.length<30&&el.value.length>4&& el.value.split([' ']).length>1){
+            return true;
+        }
+    }
+    errorblock.innerHTML="enter the correct name";
+    return false;
+}
+function checkMessage(el){
+    if (typeof el.value=='string'){
+        if(el.value.length>0){
+            return true;
+        }
+    }
+    errorblock.innerHTML="enter the correct Date";
+    return false;
+}
+
